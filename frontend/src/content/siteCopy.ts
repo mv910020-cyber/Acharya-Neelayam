@@ -1,0 +1,714 @@
+export const siteCopy = {
+  en: {
+    header: {
+      brandAlt: 'Aachara Nilayam logo',
+      menu: 'Menu',
+      cartLabel: 'Cart',
+      nav: {
+        home: 'Home',
+        products: 'Products',
+        auspiciousDays: 'Auspicious Days 2026',
+        about: 'About Us',
+        contact: 'Contact Us',
+      },
+      languages: {
+        te: '\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41',
+        en: 'English',
+      },
+      settingsLabel: 'Settings',
+    },
+    common: {
+      error: 'Error',
+      addToCart: 'Add to Cart',
+      buyNow: 'Buy Now',
+      requestItem: 'Request This Item',
+      loadingProducts: 'Loading products...',
+      loadingDetails: 'Loading product details...',
+      viewProducts: 'View Products',
+      contactBulk: 'Contact for bulk orders',
+    },
+    footer: {
+      eyebrow: 'Aachara Nilayam',
+      title: 'Traditional puja essentials with a smoother order flow.',
+      body: 'Add items to cart, review them in one place, and proceed when you are ready.',
+      links: {
+        puja: 'Puja Samagri',
+        brass: 'Brass Items',
+        festival: 'Festival Kits',
+        contact: 'Bulk Inquiries',
+      },
+    },
+    home: {
+      eyebrow: 'ఓం శ్రీ గణేశాయ నమః:',
+      mantra:
+        '"\u0936\u0941\u092d\u0902 \u0915\u0930\u094b\u0924\u093f \u0915\u0932\u094d\u092f\u093e\u0923\u0902 \u0906\u0930\u094b\u0917\u094d\u092f\u0902 \u0927\u0928\u0938\u0902\u092a\u0926\u093e"',
+      title: 'Traditional Puja Essentials for Every Auspicious Occasion',
+      copy: 'All Types of Puja Items, Return Gifts & Brass Collection Available',
+      stats: {
+        products: 'Curated products',
+        categories: 'Store categories',
+        flow: 'Ready to checkout',
+      },
+      collections: [
+        {
+          title: 'Traditional Puja Samagri',
+          subtitle: 'Authentic materials for all Hindu rituals and ceremonies',
+        },
+        {
+          title: 'Premium Brass Collection',
+          subtitle: 'Handcrafted traditional brass items for your puja room',
+        },
+        {
+          title: 'Marriage Return Gifts',
+          subtitle: 'Beautiful and meaningful gifts for wedding ceremonies',
+        },
+        {
+          title: 'Festival Special Kits',
+          subtitle: 'Complete kits for Diwali, Navratri, and all festivals',
+        },
+      ],
+      featuredEyebrow: 'Featured selections',
+      featuredTitle: 'Popular ritual items and festival-ready sets',
+      featuredLead: 'The browsing flow now matches your reference much more closely, with quick add-to-cart actions and a live cart drawer.',
+      whyEyebrow: 'Why this update works',
+      whyTitle: 'Better visuals, better cart flow, better language support',
+      storyCards: [
+        {
+          title: 'Stable image paths',
+          text: 'Product cards use local `/products/...` assets so the photos stay consistent in development and Docker.',
+        },
+        {
+          title: 'Category-led browsing',
+          text: 'Visitors can move between Puja Samagri, Brass Items, Temple Accessories, Return Gifts, and Festival Specials from one clean catalog layout.',
+        },
+        {
+          title: 'Useful backend wiring',
+          text: 'The FastAPI backend serves product data and saves customer inquiries with PostgreSQL when Docker Compose is running.',
+        },
+      ],
+    },
+    products: {
+      allProducts: 'All Products',
+      eyebrow: 'Our products',
+      title: 'Traditional puja products with a cleaner browsing flow.',
+      lead: 'Filter by category, search quickly, and add items straight into the live cart drawer.',
+      categoriesTitle: 'Categories',
+      searchLabel: 'Search products',
+      searchPlaceholder: 'Search thali, brass, festival kit',
+      results: (count: number) => `${count} product${count === 1 ? '' : 's'} shown`,
+      noResults: 'No products match this category or search yet. Try another filter.',
+    },
+    detail: {
+      unavailable: 'This product is not available right now.',
+      backToProducts: 'Back to products',
+      collection: 'Collection',
+      product: 'Product',
+      moreInCategory: 'More in this category',
+      keepBrowsing: (category: string) => `Keep browsing ${category}`,
+    },
+    contact: {
+      eyebrow: 'Contact us',
+      title: 'A cleaner contact page for direct store support and bulk order planning.',
+      lead: 'Call, send an email, or send an inquiry for product availability, custom kits, and festival orders. The form below still saves requests to the FastAPI backend when Docker Compose is running.',
+      quickReply: 'Fast reply',
+      profileTitle: 'Direct store contact',
+      formTitle: 'Send an inquiry',
+      formLead:
+        'Share your name, phone number, and requirement. We will reply with stock, pricing, or delivery details.',
+      cards: [
+        {
+          title: 'Bulk puja orders',
+          text: 'Use this form for wedding return gifts, temple accessories, and larger family-function assortments.',
+        },
+        {
+          title: 'Festival kit planning',
+          text: 'Ask for Sankranti, Ugadi, Vinayaka Chavithi, or Varalakshmi Vratham sets with the quantity you need.',
+        },
+        {
+          title: 'Quick follow-up',
+          text: 'If you need a faster reply, use the direct buttons and we can continue the discussion on call or email.',
+        },
+      ],
+      guidanceTitle: 'What helps us reply faster',
+      guidancePoints: [
+        'Mention the product name, quantity, and required date.',
+        'Tell us whether it is for home puja, temple use, gifting, or an event.',
+        'Share contact details only. Do not include Aadhaar, date of birth, or other ID numbers.',
+      ],
+      detailLabels: {
+        owner: 'Contact person',
+        phone: 'Phone / Email',
+        email: 'Email',
+        address: 'Address',
+        hours: 'Working hours',
+        response: 'Reply time',
+      },
+      actions: {
+        call: 'Call now',
+        email: 'Send email',
+      },
+      fields: {
+        name: 'Name',
+        namePlaceholder: 'Your name',
+        phone: 'Phone / Email',
+        phonePlaceholder: 'Phone number',
+        selectedProduct: 'Selected product',
+        requirement: 'Requirement',
+        requirementPlaceholder: 'Tell us what you need',
+        generalInquiry: 'General store inquiry',
+      },
+      success: 'Your inquiry has been sent successfully.',
+      send: 'Send Inquiry',
+      sending: 'Sending Inquiry...',
+    },
+    assistant: {
+      title: 'Aachara Mitra',
+      launcherLabel: 'Mitra',
+      lead:
+        'Ask about products, categories, festival kits, or upload an image or PDF for help.',
+      welcome:
+        'Namaste. I can help you explore the Aachara Nilayam catalog, answer store-context questions, and review uploaded images or PDFs.',
+      selectedProduct: 'Selected product context',
+      upload: 'Upload',
+      removeFile: 'Remove file',
+      attachedLabel: 'Attached file',
+      supportedFiles: 'Images + PDF',
+      placeholder: 'Ask about products, categories, or an uploaded file',
+      send: 'Send',
+      sending: 'Thinking...',
+      typing: 'Assistant is preparing a response...',
+      fileOnlyPrompt:
+        'Please analyze this attachment and explain it in the context of the Aachara Nilayam website.',
+      uploadError: 'Please upload an image file or a PDF document only.',
+      uploadTooLarge: 'Please use a file smaller than 10 MB.',
+      generalError: 'Unable to reach the assistant right now.',
+    },
+    about: {
+      eyebrow: 'About us',
+      title: 'A devotional storefront built for clarity, warmth, and reliable media.',
+      lead: 'This rebuild shifts the project away from generic sample data and toward a puja-products experience that looks intentional on both desktop and mobile.',
+      cards: [
+        {
+          title: 'Store-first design',
+          text: 'The new structure follows your recording with a cream header, warm hero, category-led browsing, and product cards that feel closer to a real devotional catalog.',
+        },
+        {
+          title: 'Local media control',
+          text: 'Instead of depending on remote image links, the storefront serves extracted product images from the local `public/products` directory.',
+        },
+        {
+          title: 'Full-stack ready',
+          text: 'FastAPI powers the product API and inquiry handling, while Docker Compose brings up the frontend, backend, and PostgreSQL together.',
+        },
+      ],
+    },
+    account: {
+      eyebrow: 'Account',
+      title: 'Manage your profile and language preference.',
+      lead: 'This simple settings page keeps your account details visible and your storefront language easy to switch.',
+      profileTitle: 'Profile details',
+      preferencesTitle: 'Preferences',
+      languageLead: 'Choose the language you want to use across the storefront.',
+      logoutLabel: 'Logout',
+      fields: {
+        name: 'Name',
+        username: 'Username',
+        email: 'Email',
+      },
+    },
+    auspicious: {
+      eyebrow: 'Auspicious Days 2026',
+      title: 'Festival planning that stays useful even before exact local dates are published.',
+      lead: 'Panchangam dates vary by region and tradition, so this page focuses on 2026 festival preparation windows and the product mixes customers usually need around them.',
+      planningNotes: [
+        {
+          title: 'Makara Sankranti',
+          text: 'Prepare gifting trays, family puja kits, sesame-friendly samagri, and brass presentation items ahead of the January season.',
+        },
+        {
+          title: 'Ugadi',
+          text: 'Keep new-year gift boxes, kumkum sets, and special altar arrangements ready for family visits and festive puja.',
+        },
+        {
+          title: 'Varalakshmi Vratham',
+          text: 'Focus on Lakshmi-facing decor, vratam kits, brass lamps, and neatly packed household ritual assortments.',
+        },
+        {
+          title: 'Vinayaka Chavithi',
+          text: 'Stock eco-friendly puja sets, Ganesh-facing essentials, incense, and complete same-day-ready home ritual combos.',
+        },
+      ],
+      seasonalEyebrow: 'Seasonal kits',
+      seasonalTitle: 'Festival special assortments already in the catalog',
+    },
+    cart: {
+      title: (count: number) => `Your Cart (${count} item${count === 1 ? '' : 's'})`,
+      emptyTitle: 'Your cart is empty.',
+      emptyCopy: 'Add products and review them in your cart.',
+      browseProducts: 'Browse products',
+      remove: 'Remove',
+      quantity: (count: number) => `x${count}`,
+      checkout: 'Proceed to checkout',
+      close: 'Close cart',
+    },
+  },
+  te: {
+    header: {
+      brandAlt: '\u0c06\u0c1a\u0c3e\u0c30 \u0c28\u0c3f\u0c32\u0c2f\u0c02 \u0c32\u0c4b\u0c17\u0c4b',
+      menu: '\u0c2e\u0c46\u0c28\u0c41',
+      cartLabel: '\u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d',
+      nav: {
+        home: '\u0c39\u0c4b\u0c2e\u0c4d',
+        products: '\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41',
+        auspiciousDays:
+          '\u0c36\u0c41\u0c2d \u0c26\u0c3f\u0c28\u0c3e\u0c32\u0c41 2026',
+        about: '\u0c2e\u0c3e \u0c17\u0c41\u0c30\u0c3f\u0c02\u0c1a\u0c3f',
+        contact:
+          '\u0c38\u0c02\u0c2a\u0c4d\u0c30\u0c26\u0c3f\u0c02\u0c1a\u0c02\u0c21\u0c3f',
+      },
+      languages: {
+        te: '\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41',
+        en: 'English',
+      },
+      settingsLabel: '\u0c38\u0c46\u0c1f\u0c4d\u0c1f\u0c3f\u0c02\u0c17\u0c4d\u0c38\u0c4d',
+    },
+    common: {
+      error: '\u0c32\u0c4b\u0c2a\u0c02',
+      addToCart:
+        '\u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d\u0c32\u0c4b \u0c1c\u0c4b\u0c21\u0c3f\u0c02\u0c1a\u0c02\u0c21\u0c3f',
+      buyNow:
+        '\u0c07\u0c2a\u0c4d\u0c2a\u0c41\u0c21\u0c47 \u0c15\u0c4a\u0c28\u0c02\u0c21\u0c3f',
+      requestItem:
+        '\u0c08 \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41 \u0c17\u0c41\u0c30\u0c3f\u0c02\u0c1a\u0c3f \u0c05\u0c21\u0c17\u0c02\u0c21\u0c3f',
+      loadingProducts:
+        '\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41 \u0c32\u0c4b\u0c21\u0c4d \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f...',
+      loadingDetails:
+        '\u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41 \u0c35\u0c3f\u0c35\u0c30\u0c3e\u0c32\u0c41 \u0c32\u0c4b\u0c21\u0c4d \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f...',
+      viewProducts:
+        '\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41 \u0c1a\u0c42\u0c21\u0c02\u0c21\u0c3f',
+      contactBulk:
+        'Bulk orders \u0c15\u0c4b\u0c38\u0c02 \u0c38\u0c02\u0c2a\u0c4d\u0c30\u0c26\u0c3f\u0c02\u0c1a\u0c02\u0c21\u0c3f',
+    },
+    footer: {
+      eyebrow: '\u0c06\u0c1a\u0c3e\u0c30 \u0c28\u0c3f\u0c32\u0c2f\u0c02',
+      title:
+        '\u0c38\u0c3e\u0c02\u0c2a\u0c4d\u0c30\u0c26\u0c3e\u0c2f \u0c2a\u0c42\u0c1c\u0c3e \u0c38\u0c3e\u0c2e\u0c17\u0c4d\u0c30\u0c3f\u0c15\u0c3f \u0c38\u0c41\u0c32\u0c2d\u0c2e\u0c48\u0c28 \u0c06\u0c30\u0c4d\u0c21\u0c30\u0c4d \u0c2b\u0c4d\u0c32\u0c4b.',
+      body:
+        '\u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41\u0c32\u0c28\u0c41 \u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d\u200c\u0c32\u0c4b \u0c1a\u0c47\u0c30\u0c4d\u0c1a\u0c3f, \u0c12\u0c15\u0c47\u0c1a\u0c4b\u0c1f \u0c1a\u0c42\u0c38\u0c3f, \u0c38\u0c3f\u0c26\u0c4d\u0c27\u0c2e\u0c48\u0c28\u0c2a\u0c4d\u0c2a\u0c41\u0c21\u0c41 \u0c35\u0c3e\u0c1f\u0c4d\u0c38\u0c3e\u0c2a\u0c4d \u0c1a\u0c46\u0c15\u0c4c\u0c1f\u0c4d\u200c\u0c15\u0c41 \u0c35\u0c46\u0c33\u0c4d\u0c32\u0c02\u0c21\u0c3f.',
+      links: {
+        puja: '\u0c2a\u0c42\u0c1c\u0c3e \u0c38\u0c3e\u0c2e\u0c17\u0c4d\u0c30\u0c3f',
+        brass:
+          '\u0c07\u0c24\u0c4d\u0c24\u0c21\u0c3f \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41\u0c32\u0c41',
+        festival:
+          '\u0c2a\u0c02\u0c21\u0c41\u0c17 \u0c15\u0c3f\u0c1f\u0c4d\u0c32\u0c41',
+        contact:
+          '\u0c2c\u0c32\u0c4d\u0c15\u0c4d \u0c35\u0c3f\u0c1a\u0c3e\u0c30\u0c23\u0c32\u0c41',
+      },
+    },
+    home: {
+      eyebrow: '\u0c13\u0c02 \u0c36\u0c4d\u0c30\u0c40 \u0c17\u0c23\u0c47\u0c36\u0c3e\u0c2f \u0c28\u0c2e\u0c03:',
+      mantra:
+        '"\u0c36\u0c41\u0c2d\u0c02 \u0c15\u0c30\u0c4b\u0c24\u0c3f \u0c15\u0c32\u0c4d\u0c2f\u0c3e\u0c23\u0c02 \u0c06\u0c30\u0c4b\u0c17\u0c4d\u0c2f\u0c02 \u0c27\u0c28\u0c38\u0c02\u0c2a\u0c26\u0c3e"',
+      title:
+        '\u0c2a\u0c4d\u0c30\u0c24\u0c3f \u0c36\u0c41\u0c2d \u0c38\u0c02\u0c26\u0c30\u0c4d\u0c2d\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c38\u0c02\u0c2a\u0c4d\u0c30\u0c26\u0c3e\u0c2f \u0c2a\u0c42\u0c1c\u0c3e \u0c05\u0c35\u0c38\u0c30\u0c3e\u0c32\u0c41',
+      copy:
+        '\u0c05\u0c28\u0c4d\u0c28\u0c3f \u0c30\u0c15\u0c3e\u0c32 \u0c2a\u0c42\u0c1c\u0c3e \u0c38\u0c3e\u0c2e\u0c17\u0c4d\u0c30\u0c3f, \u0c30\u0c3f\u0c1f\u0c30\u0c4d\u0c28\u0c4d \u0c17\u0c3f\u0c2b\u0c4d\u0c1f\u0c4d\u0c38\u0c4d & \u0c2c\u0c4d\u0c30\u0c3e\u0c38\u0c4d \u0c15\u0c32\u0c46\u0c15\u0c4d\u0c37\u0c28\u0c4d \u0c05\u0c02\u0c26\u0c41\u0c2c\u0c3e\u0c1f\u0c41\u0c32\u0c4b \u0c09\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f',
+      stats: {
+        products:
+          '\u0c0e\u0c02\u0c1a\u0c41\u0c15\u0c41\u0c28\u0c4d\u0c28 \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41',
+        categories:
+          '\u0c38\u0c4d\u0c1f\u0c4b\u0c30\u0c4d \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c32\u0c41',
+        flow:
+          '\u0c35\u0c3e\u0c1f\u0c4d\u0c38\u0c3e\u0c2a\u0c4d \u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d \u0c38\u0c3f\u0c26\u0c4d\u0c27\u0c02',
+      },
+      collections: [
+        {
+          title:
+            '\u0c38\u0c02\u0c2a\u0c4d\u0c30\u0c26\u0c3e\u0c2f \u0c2a\u0c42\u0c1c\u0c3e \u0c38\u0c3e\u0c2e\u0c17\u0c4d\u0c30\u0c3f',
+          subtitle:
+            '\u0c39\u0c3f\u0c02\u0c26\u0c42 \u0c06\u0c1a\u0c3e\u0c30\u0c3e\u0c32\u0c15\u0c41, \u0c2a\u0c42\u0c1c\u0c32\u0c15\u0c41 \u0c05\u0c35\u0c38\u0c30\u0c2e\u0c48\u0c28 \u0c2a\u0c26\u0c3e\u0c30\u0c4d\u0c25\u0c3e\u0c32\u0c41',
+        },
+        {
+          title:
+            '\u0c2a\u0c4d\u0c30\u0c40\u0c2e\u0c3f\u0c2f\u0c02 \u0c2c\u0c4d\u0c30\u0c3e\u0c38\u0c4d \u0c15\u0c32\u0c46\u0c15\u0c4d\u0c37\u0c28\u0c4d',
+          subtitle:
+            '\u0c2e\u0c40 \u0c2a\u0c42\u0c1c\u0c3e \u0c17\u0c26\u0c3f\u0c15\u0c3f \u0c39\u0c38\u0c4d\u0c24\u0c15\u0c33\u0c24\u0c4b \u0c24\u0c2f\u0c3e\u0c30\u0c41 \u0c1a\u0c47\u0c38\u0c3f\u0c28 \u0c38\u0c02\u0c2a\u0c4d\u0c30\u0c26\u0c3e\u0c2f \u0c2c\u0c4d\u0c30\u0c3e\u0c38\u0c4d \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41\u0c32\u0c41',
+        },
+        {
+          title:
+            '\u0c35\u0c3f\u0c35\u0c3e\u0c39 \u0c30\u0c3f\u0c1f\u0c30\u0c4d\u0c28\u0c4d \u0c17\u0c3f\u0c2b\u0c4d\u0c1f\u0c4d\u0c38\u0c4d',
+          subtitle:
+            '\u0c2a\u0c46\u0c33\u0c4d\u0c33\u0c3f \u0c35\u0c47\u0c21\u0c41\u0c15\u0c32\u0c15\u0c41 \u0c05\u0c02\u0c26\u0c2e\u0c48\u0c28, \u0c05\u0c30\u0c4d\u0c25\u0c35\u0c02\u0c24\u0c2e\u0c48\u0c28 \u0c2c\u0c39\u0c41\u0c2e\u0c24\u0c41\u0c32\u0c41',
+        },
+        {
+          title:
+            '\u0c2a\u0c02\u0c21\u0c41\u0c17 \u0c2a\u0c4d\u0c30\u0c24\u0c4d\u0c2f\u0c47\u0c15 \u0c15\u0c3f\u0c1f\u0c4d\u0c32\u0c41',
+          subtitle:
+            '\u0c26\u0c40\u0c2a\u0c3e\u0c35\u0c33\u0c3f, \u0c28\u0c35\u0c30\u0c3e\u0c24\u0c4d\u0c30\u0c3f, \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c05\u0c28\u0c4d\u0c28\u0c3f \u0c2a\u0c02\u0c21\u0c41\u0c17\u0c32\u0c15\u0c41 \u0c2a\u0c42\u0c30\u0c4d\u0c24\u0c3f \u0c15\u0c3f\u0c1f\u0c4d\u0c32\u0c41',
+        },
+      ],
+      featuredEyebrow:
+        '\u0c2a\u0c4d\u0c30\u0c24\u0c4d\u0c2f\u0c47\u0c15 \u0c0e\u0c02\u0c2a\u0c3f\u0c15\u0c32\u0c41',
+      featuredTitle:
+        '\u0c2a\u0c4d\u0c30\u0c2e\u0c41\u0c16 \u0c2a\u0c42\u0c1c\u0c3e \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41\u0c32\u0c41 \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c2a\u0c02\u0c21\u0c41\u0c17 \u0c38\u0c46\u0c1f\u0c4d\u0c32\u0c41',
+      featuredLead:
+        '\u0c24\u0c4d\u0c35\u0c30\u0c3f\u0c24\u0c02\u0c17\u0c3e \u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d\u200c\u0c32\u0c4b \u0c1a\u0c47\u0c30\u0c4d\u0c1a\u0c47 \u0c1a\u0c30\u0c4d\u0c2f\u0c32\u0c41 \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c32\u0c48\u0c35\u0c4d \u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d \u0c21\u0c4d\u0c30\u0c3e\u0c2f\u0c30\u0c4d\u200c\u0c24\u0c4b \u0c08 \u0c2c\u0c4d\u0c30\u0c4c\u0c1c\u0c3f\u0c02\u0c17\u0c4d \u0c2b\u0c4d\u0c32\u0c4b \u0c07\u0c2a\u0c4d\u0c2a\u0c41\u0c21\u0c41 \u0c2e\u0c40 \u0c30\u0c3f\u0c2b\u0c30\u0c46\u0c28\u0c4d\u0c38\u0c4d\u200c\u0c15\u0c41 \u0c2e\u0c30\u0c3f\u0c02\u0c24 \u0c26\u0c17\u0c4d\u0c17\u0c30\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f.',
+      whyEyebrow:
+        '\u0c08 \u0c2e\u0c3e\u0c30\u0c4d\u0c2a\u0c41 \u0c0e\u0c02\u0c26\u0c41\u0c15\u0c41 \u0c2e\u0c02\u0c1a\u0c3f\u0c26\u0c3f',
+      whyTitle:
+        '\u0c2e\u0c02\u0c1a\u0c3f \u0c35\u0c3f\u0c1c\u0c41\u0c35\u0c32\u0c4d\u0c38\u0c4d, \u0c2e\u0c02\u0c1a\u0c3f \u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d \u0c2b\u0c4d\u0c32\u0c4b, \u0c2e\u0c02\u0c1a\u0c3f \u0c2d\u0c3e\u0c37\u0c3e \u0c2e\u0c26\u0c4d\u0c26\u0c24\u0c41',
+      storyCards: [
+        {
+          title:
+            '\u0c38\u0c4d\u0c25\u0c3f\u0c30\u0c2e\u0c48\u0c28 \u0c1a\u0c3f\u0c24\u0c4d\u0c30 \u0c2e\u0c3e\u0c30\u0c4d\u0c17\u0c3e\u0c32\u0c41',
+          text:
+            '\u0c2a\u0c4d\u0c30\u0c4a\u0c21\u0c15\u0c4d\u0c1f\u0c4d \u0c15\u0c3e\u0c30\u0c4d\u0c21\u0c41\u0c32\u0c41 \u0c38\u0c4d\u0c25\u0c3e\u0c28\u0c3f\u0c15 `/products/...` \u0c06\u0c38\u0c4d\u0c24\u0c41\u0c32\u0c28\u0c41 \u0c09\u0c2a\u0c2f\u0c4b\u0c17\u0c3f\u0c38\u0c4d\u0c24\u0c3e\u0c2f\u0c3f \u0c15\u0c3e\u0c2c\u0c1f\u0c4d\u0c1f\u0c3f \u0c2b\u0c4b\u0c1f\u0c4b\u0c32\u0c41 development \u0c2e\u0c30\u0c3f\u0c2f\u0c41 Docker\u0c32\u0c4b \u0c12\u0c15\u0c47\u0c32\u0c3e \u0c15\u0c28\u0c3f\u0c2a\u0c3f\u0c38\u0c4d\u0c24\u0c3e\u0c2f\u0c3f.',
+        },
+        {
+          title:
+            '\u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c32 \u0c06\u0c27\u0c3e\u0c30\u0c3f\u0c24 \u0c2c\u0c4d\u0c30\u0c4c\u0c1c\u0c3f\u0c02\u0c17\u0c4d',
+          text:
+            '\u0c35\u0c3f\u0c1c\u0c3f\u0c1f\u0c30\u0c4d\u0c32\u0c41 \u0c12\u0c15\u0c47 \u0c36\u0c41\u0c2d\u0c4d\u0c30\u0c2e\u0c48\u0c28 \u0c15\u0c4d\u0c2f\u0c3e\u0c1f\u0c32\u0c3e\u0c17\u0c4d \u0c32\u0c47\u0c05\u0c35\u0c41\u0c1f\u0c4d \u0c28\u0c41\u0c02\u0c21\u0c3f \u0c05\u0c28\u0c4d\u0c28\u0c3f \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c32 \u0c2e\u0c27\u0c4d\u0c2f \u0c38\u0c41\u0c32\u0c2d\u0c02\u0c17\u0c3e \u0c24\u0c3f\u0c30\u0c17\u0c35\u0c1a\u0c4d\u0c1a\u0c41.',
+        },
+        {
+          title:
+            '\u0c2c\u0c32\u0c2e\u0c48\u0c28 \u0c2c\u0c4d\u0c2f\u0c3e\u0c15\u0c46\u0c02\u0c21\u0c4d \u0c15\u0c28\u0c46\u0c15\u0c4d\u0c37\u0c28\u0c4d',
+          text:
+            'FastAPI \u0c2c\u0c4d\u0c2f\u0c3e\u0c15\u0c4d\u200c\u0c0e\u0c02\u0c21\u0c4d \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c3f \u0c35\u0c3f\u0c35\u0c30\u0c3e\u0c32\u0c28\u0c41 \u0c05\u0c02\u0c26\u0c3f\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f; Docker Compose \u0c28\u0c21\u0c41\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c2a\u0c4d\u0c2a\u0c41\u0c21\u0c41 PostgreSQL\u0c32\u0c4b \u0c15\u0c38\u0c4d\u0c1f\u0c2e\u0c30\u0c4d \u0c35\u0c3f\u0c1a\u0c3e\u0c30\u0c23\u0c32\u0c28\u0c41 \u0c2d\u0c26\u0c4d\u0c30\u0c2a\u0c30\u0c41\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f.',
+        },
+      ],
+    },
+    products: {
+      allProducts:
+        '\u0c05\u0c28\u0c4d\u0c28\u0c3f \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41',
+      eyebrow: '\u0c2e\u0c3e \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41',
+      title:
+        '\u0c36\u0c41\u0c2d\u0c4d\u0c30\u0c2e\u0c48\u0c28 \u0c2c\u0c4d\u0c30\u0c4c\u0c1c\u0c3f\u0c02\u0c17\u0c4d \u0c2b\u0c4d\u0c32\u0c4b\u0c24\u0c4b \u0c38\u0c3e\u0c02\u0c2a\u0c4d\u0c30\u0c26\u0c3e\u0c2f \u0c2a\u0c42\u0c1c\u0c3e \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41.',
+      lead:
+        '\u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c02 \u0c2a\u0c4d\u0c30\u0c15\u0c3e\u0c30\u0c02 \u0c2b\u0c3f\u0c32\u0c4d\u0c1f\u0c30\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f, \u0c24\u0c4d\u0c35\u0c30\u0c17\u0c3e \u0c35\u0c46\u0c24\u0c15\u0c02\u0c21\u0c3f, \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41\u0c32\u0c28\u0c41 \u0c28\u0c47\u0c30\u0c41\u0c17\u0c3e \u0c32\u0c48\u0c35\u0c4d \u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d \u0c21\u0c4d\u0c30\u0c3e\u0c2f\u0c30\u0c4d\u200c\u0c32\u0c4b \u0c1a\u0c47\u0c30\u0c4d\u0c1a\u0c02\u0c21\u0c3f.',
+      categoriesTitle:
+        '\u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c32\u0c41',
+      searchLabel:
+        '\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41 \u0c35\u0c46\u0c24\u0c15\u0c02\u0c21\u0c3f',
+      searchPlaceholder:
+        '\u0c24\u0c3e\u0c33\u0c3f, \u0c07\u0c24\u0c4d\u0c24\u0c21\u0c3f, \u0c2a\u0c02\u0c21\u0c41\u0c17 \u0c15\u0c3f\u0c1f\u0c4d \u0c35\u0c46\u0c24\u0c15\u0c02\u0c21\u0c3f',
+      results: (count: number) =>
+        `${count} \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41`,
+      noResults:
+        '\u0c08 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c02 \u0c32\u0c47\u0c26\u0c3e \u0c36\u0c4b\u0c27\u0c28\u0c15\u0c41 \u0c38\u0c30\u0c3f\u0c2a\u0c21\u0c47 \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41 \u0c32\u0c47\u0c35\u0c41.',
+    },
+    detail: {
+      unavailable:
+        '\u0c08 \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41 \u0c2a\u0c4d\u0c30\u0c38\u0c4d\u0c24\u0c41\u0c24\u0c02 \u0c05\u0c02\u0c26\u0c41\u0c2c\u0c3e\u0c1f\u0c41\u0c32\u0c4b \u0c32\u0c47\u0c26\u0c41.',
+      backToProducts:
+        '\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c15\u0c3f \u0c24\u0c3f\u0c30\u0c3f\u0c17\u0c3f \u0c35\u0c46\u0c33\u0c4d\u0c33\u0c02\u0c21\u0c3f',
+      collection:
+        '\u0c15\u0c32\u0c46\u0c15\u0c4d\u0c37\u0c28\u0c4d',
+      product:
+        '\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c3f',
+      moreInCategory:
+        '\u0c08 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c02\u0c32\u0c4b \u0c2e\u0c30\u0c3f\u0c28\u0c4d\u0c28\u0c3f',
+      keepBrowsing: (category: string) =>
+        `${category} \u0c07\u0c02\u0c15\u0c3e \u0c1a\u0c42\u0c21\u0c02\u0c21\u0c3f`,
+    },
+    contact: {
+      eyebrow:
+        '\u0c38\u0c02\u0c2a\u0c4d\u0c30\u0c26\u0c3f\u0c02\u0c1a\u0c02\u0c21\u0c3f',
+      title:
+        '\u0c38\u0c4d\u0c1f\u0c4b\u0c30\u0c4d\u200c\u0c24\u0c4b \u0c28\u0c47\u0c30\u0c41\u0c17\u0c3e \u0c2e\u0c3e\u0c1f\u0c4d\u0c32\u0c3e\u0c21\u0c1f\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c36\u0c41\u0c2d\u0c4d\u0c30\u0c2e\u0c48\u0c28 contact page',
+      lead:
+        '\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c3f \u0c05\u0c02\u0c26\u0c41\u0c2c\u0c3e\u0c1f\u0c41, custom kits, \u0c2a\u0c02\u0c21\u0c41\u0c17 \u0c06\u0c30\u0c4d\u0c21\u0c30\u0c4d\u0c32 \u0c15\u0c4b\u0c38\u0c02 call \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f, email \u0c26\u0c4d\u0c35\u0c3e\u0c30\u0c3e inquiry \u0c2a\u0c02\u0c2a\u0c02\u0c21\u0c3f. \u0c15\u0c3f\u0c02\u0c26 \u0c09\u0c28\u0c4d\u0c28 form FastAPI backend \u0c15\u0c41 connect \u0c05\u0c2f\u0c3f, Docker Compose \u0c30\u0c28\u0c4d \u0c05\u0c2f\u0c4d\u0c2f\u0c3f\u0c28\u0c2a\u0c4d\u0c2a\u0c41\u0c21\u0c41 PostgreSQL\u0c32\u0c4b save \u0c05\u0c35\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f.',
+      quickReply:
+        '\u0c24\u0c4d\u0c35\u0c30\u0c3f\u0c24 \u0c38\u0c4d\u0c2a\u0c02\u0c26\u0c28',
+      profileTitle:
+        '\u0c38\u0c4d\u0c1f\u0c4b\u0c30\u0c4d direct contact',
+      formTitle:
+        '\u0c35\u0c3f\u0c1a\u0c3e\u0c30\u0c23 \u0c2a\u0c02\u0c2a\u0c02\u0c21\u0c3f',
+      formLead:
+        '\u0c2e\u0c40 \u0c2a\u0c47\u0c30\u0c41, \u0c2b\u0c4b\u0c28\u0c4d \u0c28\u0c02\u0c2c\u0c30\u0c4d, \u0c2e\u0c40\u0c15\u0c41 \u0c15\u0c3e\u0c35\u0c32\u0c38\u0c3f\u0c28 \u0c05\u0c35\u0c38\u0c30\u0c3e\u0c28\u0c4d\u0c28\u0c3f share \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. stock, price, delivery details \u0c24\u0c4b \u0c2e\u0c47\u0c2e\u0c41 \u0c38\u0c4d\u0c2a\u0c02\u0c26\u0c3f\u0c38\u0c4d\u0c24\u0c3e\u0c2e\u0c41.',
+      cards: [
+        {
+          title:
+            '\u0c2c\u0c32\u0c4d\u0c15\u0c4d \u0c2a\u0c42\u0c1c\u0c3e \u0c06\u0c30\u0c4d\u0c21\u0c30\u0c4d\u0c32\u0c41',
+          text:
+            '\u0c35\u0c3f\u0c35\u0c3e\u0c39 \u0c30\u0c3f\u0c1f\u0c30\u0c4d\u0c28\u0c4d \u0c17\u0c3f\u0c2b\u0c4d\u0c1f\u0c41\u0c32\u0c41, \u0c26\u0c47\u0c35\u0c3e\u0c32\u0c2f \u0c09\u0c2a\u0c15\u0c30\u0c23\u0c3e\u0c32\u0c41, \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c2a\u0c46\u0c26\u0c4d\u0c26 \u0c15\u0c41\u0c1f\u0c41\u0c02\u0c2c \u0c35\u0c47\u0c21\u0c41\u0c15\u0c32 \u0c15\u0c4b\u0c38\u0c02 \u0c08 \u0c2b\u0c3e\u0c30\u0c3e\u0c28\u0c4d\u0c28\u0c3f \u0c09\u0c2a\u0c2f\u0c4b\u0c17\u0c3f\u0c02\u0c1a\u0c02\u0c21\u0c3f.',
+        },
+        {
+          title:
+            '\u0c2a\u0c02\u0c21\u0c41\u0c17 \u0c15\u0c3f\u0c1f\u0c4d planning',
+          text:
+            '\u0c2e\u0c40\u0c15\u0c41 \u0c15\u0c3e\u0c35\u0c32\u0c38\u0c3f\u0c28 \u0c2a\u0c30\u0c3f\u0c2e\u0c3e\u0c23\u0c02\u0c24\u0c4b \u0c38\u0c02\u0c15\u0c4d\u0c30\u0c3e\u0c02\u0c24\u0c3f, \u0c09\u0c17\u0c3e\u0c26\u0c3f, \u0c35\u0c3f\u0c28\u0c3e\u0c2f\u0c15 \u0c1a\u0c35\u0c3f\u0c24\u0c3f, \u0c32\u0c47\u0c26\u0c3e \u0c35\u0c30\u0c32\u0c15\u0c4d\u0c37\u0c4d\u0c2e\u0c40 \u0c35\u0c4d\u0c30\u0c24\u0c02 \u0c38\u0c46\u0c1f\u0c4d\u0c32 \u0c17\u0c41\u0c30\u0c3f\u0c02\u0c1a\u0c3f \u0c05\u0c21\u0c17\u0c02\u0c21\u0c3f.',
+        },
+        {
+          title:
+            '\u0c24\u0c4d\u0c35\u0c30\u0c3f\u0c24 follow-up',
+          text:
+            '\u0c24\u0c4d\u0c35\u0c30\u0c17\u0c3e \u0c38\u0c4d\u0c2a\u0c02\u0c26\u0c28 \u0c15\u0c3e\u0c35\u0c3e\u0c32\u0c02\u0c1f\u0c47 direct buttons \u0c35\u0c3e\u0c21\u0c02\u0c21\u0c3f. \u0c05\u0c15\u0c4d\u0c15\u0c21 \u0c28\u0c41\u0c02\u0c21\u0c3f call \u0c32\u0c47\u0c26\u0c3e email \u0c26\u0c4d\u0c35\u0c3e\u0c30\u0c3e continue \u0c1a\u0c47\u0c2f\u0c35\u0c1a\u0c4d\u0c1a\u0c41.',
+        },
+      ],
+      guidanceTitle:
+        '\u0c24\u0c4d\u0c35\u0c30\u0c17\u0c3e reply \u0c07\u0c35\u0c4d\u0c35\u0c21\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c09\u0c2a\u0c2f\u0c4b\u0c17\u0c2a\u0c21\u0c47 \u0c35\u0c3f\u0c35\u0c30\u0c3e\u0c32\u0c41',
+      guidancePoints: [
+        '\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c3f \u0c2a\u0c47\u0c30\u0c41, quantity, \u0c15\u0c3e\u0c35\u0c32\u0c38\u0c3f\u0c28 date \u0c1a\u0c46\u0c2a\u0c4d\u0c2a\u0c02\u0c21\u0c3f.',
+        '\u0c07\u0c26\u0c3f home puja \u0c15\u0c4b\u0c38\u0c2e\u0c3e, temple use \u0c15\u0c4b\u0c38\u0c2e\u0c3e, gifting \u0c15\u0c4b\u0c38\u0c2e\u0c3e \u0c32\u0c47\u0c26\u0c3e event \u0c15\u0c4b\u0c38\u0c2e\u0c3e \u0c1a\u0c46\u0c2a\u0c4d\u0c2a\u0c02\u0c21\u0c3f.',
+        '\u0c38\u0c3e\u0c27\u0c3e\u0c30\u0c23 contact details \u0c2e\u0c3e\u0c24\u0c4d\u0c30\u0c2e\u0c47 share \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. Aadhaar, DOB, \u0c32\u0c47\u0c26\u0c3e \u0c07\u0c24\u0c30 ID numbers \u0c2a\u0c02\u0c2a\u0c15\u0c02\u0c21\u0c3f.',
+      ],
+      detailLabels: {
+        owner:
+          '\u0c38\u0c02\u0c2a\u0c4d\u0c30\u0c26\u0c3f\u0c02\u0c1a\u0c35\u0c32\u0c38\u0c3f\u0c28 \u0c35\u0c4d\u0c2f\u0c15\u0c4d\u0c24\u0c3f',
+        phone:
+          '\u0c2b\u0c4b\u0c28\u0c4d / Email',
+        email: 'Email',
+        address:
+          '\u0c1a\u0c3f\u0c30\u0c41\u0c28\u0c3e\u0c2e\u0c3e',
+        hours:
+          '\u0c2a\u0c28\u0c3f \u0c38\u0c2e\u0c2f\u0c3e\u0c32\u0c41',
+        response:
+          '\u0c38\u0c4d\u0c2a\u0c02\u0c26\u0c28 \u0c38\u0c2e\u0c2f\u0c02',
+      },
+      actions: {
+        call:
+          '\u0c07\u0c2a\u0c4d\u0c2a\u0c41\u0c21\u0c47 call \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f',
+        email: 'Email \u0c2a\u0c02\u0c2a\u0c02\u0c21\u0c3f',
+      },
+      fields: {
+        name: '\u0c2a\u0c47\u0c30\u0c41',
+        namePlaceholder: '\u0c2e\u0c40 \u0c2a\u0c47\u0c30\u0c41',
+        phone:
+          '\u0c2b\u0c4b\u0c28\u0c4d / \u0c40\u0c2e\u0c46\u0c32\u0c4d',
+        phonePlaceholder: '\u0c2b\u0c4b\u0c28\u0c4d \u0c28\u0c02\u0c2c\u0c30\u0c4d',
+        selectedProduct:
+          '\u0c0e\u0c02\u0c1a\u0c41\u0c15\u0c41\u0c28\u0c4d\u0c28 \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c3f',
+        requirement:
+          '\u0c05\u0c35\u0c38\u0c30\u0c02',
+        requirementPlaceholder:
+          '\u0c2e\u0c40\u0c15\u0c41 \u0c0f\u0c2e\u0c3f \u0c15\u0c3e\u0c35\u0c3e\u0c32\u0c4b \u0c1a\u0c46\u0c2a\u0c4d\u0c2a\u0c02\u0c21\u0c3f',
+        generalInquiry:
+          '\u0c38\u0c3e\u0c27\u0c3e\u0c30\u0c23 \u0c38\u0c4d\u0c1f\u0c4b\u0c30\u0c4d \u0c35\u0c3f\u0c1a\u0c3e\u0c30\u0c23',
+      },
+      success:
+        '\u0c2e\u0c40 \u0c35\u0c3f\u0c1a\u0c3e\u0c30\u0c23 \u0c35\u0c3f\u0c1c\u0c2f\u0c35\u0c02\u0c24\u0c02\u0c17\u0c3e \u0c2a\u0c02\u0c2a\u0c2c\u0c21\u0c3f\u0c02\u0c26\u0c3f.',
+      send:
+        '\u0c35\u0c3f\u0c1a\u0c3e\u0c30\u0c23 \u0c2a\u0c02\u0c2a\u0c02\u0c21\u0c3f',
+      sending:
+        '\u0c35\u0c3f\u0c1a\u0c3e\u0c30\u0c23 \u0c2a\u0c02\u0c2a\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c02...',
+    },
+    assistant: {
+      title: '\u0c06\u0c1a\u0c3e\u0c30 \u0c2e\u0c3f\u0c24\u0c4d\u0c30',
+      launcherLabel: '\u0c2e\u0c3f\u0c24\u0c4d\u0c30',
+      lead:
+        '\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c3f\u0c32\u0c41, \u0c15\u0c47\u0c1f\u0c17\u0c30\u0c40\u0c32\u0c41, \u0c2a\u0c02\u0c21\u0c41\u0c17 \u0c15\u0c3f\u0c1f\u0c4d\u0c32\u0c41 \u0c17\u0c41\u0c30\u0c3f\u0c02\u0c1a\u0c3f \u0c05\u0c21\u0c17\u0c02\u0c21\u0c3f, \u0c32\u0c47\u0c26\u0c3e image \u0c32\u0c47\u0c26\u0c3e PDF upload \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f.',
+      welcome:
+        '\u0c28\u0c2e\u0c38\u0c4d\u0c24\u0c47. Aachara Nilayam catalog, store context, \u0c2e\u0c30\u0c3f\u0c2f\u0c41 upload \u0c1a\u0c47\u0c38\u0c3f\u0c28 image/PDF \u0c17\u0c41\u0c30\u0c3f\u0c02\u0c1a\u0c3f \u0c28\u0c47\u0c28\u0c41 \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c1a\u0c47\u0c2f\u0c17\u0c32\u0c28\u0c41.',
+      selectedProduct:
+        '\u0c0e\u0c02\u0c1a\u0c41\u0c15\u0c41\u0c28\u0c4d\u0c28 \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c3f',
+      upload: 'Upload',
+      removeFile:
+        'Remove file',
+      attachedLabel:
+        'Attached file',
+      supportedFiles: 'Images + PDF',
+      placeholder:
+        '\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c3f, \u0c15\u0c47\u0c1f\u0c17\u0c30\u0c40 \u0c32\u0c47\u0c26\u0c3e upload \u0c1a\u0c47\u0c38\u0c3f\u0c28 file \u0c17\u0c41\u0c30\u0c3f\u0c02\u0c1a\u0c3f \u0c05\u0c21\u0c17\u0c02\u0c21\u0c3f',
+      send: 'Send',
+      sending:
+        '\u0c06\u0c32\u0c4b\u0c1a\u0c3f\u0c38\u0c4d\u0c24\u0c4b\u0c02\u0c26\u0c3f...',
+      typing:
+        '\u0c38\u0c39\u0c3e\u0c2f\u0c15\u0c41\u0c21\u0c41 \u0c38\u0c2e\u0c3e\u0c27\u0c3e\u0c28\u0c02 \u0c24\u0c2f\u0c3e\u0c30\u0c41 \u0c1a\u0c47\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c21\u0c41...',
+      fileOnlyPrompt:
+        '\u0c26\u0c2f\u0c1a\u0c47\u0c38\u0c3f \u0c08 file \u0c28\u0c41 analyze \u0c1a\u0c47\u0c38\u0c3f, Aachara Nilayam context \u0c32\u0c4b \u0c35\u0c3f\u0c35\u0c30\u0c3f\u0c02\u0c1a\u0c02\u0c21\u0c3f.',
+      uploadError:
+        '\u0c26\u0c2f\u0c1a\u0c47\u0c38\u0c3f image \u0c32\u0c47\u0c26\u0c3e PDF file \u0c2e\u0c3e\u0c24\u0c4d\u0c30\u0c2e\u0c47 upload \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f.',
+      uploadTooLarge:
+        '\u0c26\u0c2f\u0c1a\u0c47\u0c38\u0c3f 10 MB \u0c15\u0c28\u0c4d\u0c28\u0c3e \u0c1a\u0c3f\u0c28\u0c4d\u0c28 file \u0c35\u0c3e\u0c21\u0c02\u0c21\u0c3f.',
+      generalError:
+        '\u0c07\u0c2a\u0c4d\u0c2a\u0c41\u0c21\u0c41 \u0c38\u0c39\u0c3e\u0c2f\u0c15\u0c41\u0c21\u0c3f\u0c28\u0c3f reach \u0c1a\u0c47\u0c2f\u0c32\u0c47\u0c15\u0c2a\u0c4b\u0c2f\u0c3e\u0c2e\u0c41.',
+    },
+    about: {
+      eyebrow:
+        '\u0c2e\u0c3e \u0c17\u0c41\u0c30\u0c3f\u0c02\u0c1a\u0c3f',
+      title:
+        '\u0c2d\u0c15\u0c4d\u0c24\u0c3f \u0c38\u0c4d\u0c1f\u0c4b\u0c30\u0c4d \u0c17\u0c41\u0c30\u0c3f\u0c02\u0c1a\u0c3f',
+      lead:
+        '\u0c08 \u0c2a\u0c41\u0c28\u0c30\u0c4d\u0c28\u0c3f\u0c30\u0c4d\u0c2e\u0c3e\u0c23\u0c02 \u0c2a\u0c4d\u0c30\u0c3e\u0c1c\u0c46\u0c15\u0c4d\u0c1f\u0c4d\u200c\u0c28\u0c41 \u0c38\u0c3e\u0c27\u0c3e\u0c30\u0c23 \u0c28\u0c2e\u0c42\u0c28\u0c3e \u0c21\u0c47\u0c1f\u0c3e \u0c28\u0c41\u0c02\u0c21\u0c3f \u0c26\u0c42\u0c30\u0c02\u0c17\u0c3e \u0c24\u0c40\u0c38\u0c41\u0c15\u0c46\u0c33\u0c4d\u0c32\u0c3f, \u0c21\u0c46\u0c38\u0c4d\u0c15\u0c4d\u200c\u0c1f\u0c3e\u0c2a\u0c4d \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c2e\u0c4a\u0c2c\u0c48\u0c32\u0c4d \u0c30\u0c46\u0c02\u0c21\u0c3f\u0c02\u0c1f\u0c3f\u0c32\u0c4b\u0c28\u0c42 \u0c09\u0c26\u0c4d\u0c26\u0c47\u0c36\u0c2a\u0c42\u0c30\u0c4d\u0c35\u0c15\u0c02\u0c17\u0c3e \u0c15\u0c28\u0c3f\u0c2a\u0c3f\u0c02\u0c1a\u0c47 \u0c2a\u0c42\u0c1c\u0c3e-\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32 \u0c05\u0c28\u0c41\u0c2d\u0c35\u0c02\u0c17\u0c3e \u0c2e\u0c3e\u0c30\u0c4d\u0c1a\u0c3f\u0c02\u0c26\u0c3f.',
+      cards: [
+        {
+          title:
+            '\u0c38\u0c4d\u0c1f\u0c4b\u0c30\u0c4d-\u0c2b\u0c38\u0c4d\u0c1f\u0c4d \u0c21\u0c3f\u0c1c\u0c48\u0c28\u0c4d',
+          text:
+            '\u0c15\u0c4a\u0c24\u0c4d\u0c24 \u0c28\u0c3f\u0c30\u0c4d\u0c2e\u0c3e\u0c23\u0c02 \u0c2e\u0c40 \u0c30\u0c3f\u0c15\u0c3e\u0c30\u0c4d\u0c21\u0c3f\u0c02\u0c17\u0c4d\u200c\u0c28\u0c41 \u0c05\u0c28\u0c41\u0c38\u0c30\u0c3f\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f: \u0c15\u0c4d\u0c30\u0c40\u0c2e\u0c4d \u0c39\u0c46\u0c21\u0c4d\u0c21\u0c30\u0c4d, \u0c09\u0c37\u0c4d\u0c23\u0c2e\u0c48\u0c28 \u0c39\u0c40\u0c30\u0c4b, \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c32 \u0c06\u0c27\u0c3e\u0c30\u0c3f\u0c24 \u0c2c\u0c4d\u0c30\u0c4c\u0c1c\u0c3f\u0c02\u0c17\u0c4d, \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c28\u0c3f\u0c1c\u0c2e\u0c48\u0c28 \u0c2d\u0c15\u0c4d\u0c24\u0c3f \u0c15\u0c4d\u0c2f\u0c3e\u0c1f\u0c32\u0c3e\u0c17\u0c4d\u200c\u0c32\u0c3e \u0c15\u0c28\u0c3f\u0c2a\u0c3f\u0c02\u0c1a\u0c47 \u0c2a\u0c4d\u0c30\u0c4a\u0c21\u0c15\u0c4d\u0c1f\u0c4d \u0c15\u0c3e\u0c30\u0c4d\u0c21\u0c41\u0c32\u0c41.',
+        },
+        {
+          title:
+            '\u0c32\u0c4b\u0c15\u0c32\u0c4d \u0c2e\u0c40\u0c21\u0c3f\u0c2f\u0c3e \u0c15\u0c02\u0c1f\u0c4d\u0c30\u0c4b\u0c32\u0c4d',
+          text:
+            '\u0c30\u0c3f\u0c2e\u0c4b\u0c1f\u0c4d \u0c07\u0c2e\u0c47\u0c1c\u0c4d \u0c32\u0c3f\u0c02\u0c15\u0c41\u0c32\u0c2a\u0c48 \u0c06\u0c27\u0c3e\u0c30\u0c2a\u0c21\u0c15\u0c41\u0c02\u0c21\u0c3e, \u0c38\u0c4d\u0c1f\u0c4b\u0c30\u0c4d\u200c\u0c2b\u0c4d\u0c30\u0c02\u0c1f\u0c4d \u0c38\u0c4d\u0c25\u0c3e\u0c28\u0c3f\u0c15 `public/products` \u0c21\u0c48\u0c30\u0c46\u0c15\u0c4d\u0c1f\u0c30\u0c40 \u0c28\u0c41\u0c02\u0c21\u0c3f \u0c24\u0c40\u0c38\u0c3f\u0c28 \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c3f \u0c1a\u0c3f\u0c24\u0c4d\u0c30\u0c3e\u0c32\u0c28\u0c41 \u0c05\u0c02\u0c26\u0c3f\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f.',
+        },
+        {
+          title:
+            '\u0c2b\u0c41\u0c32\u0c4d-\u0c38\u0c4d\u0c1f\u0c3e\u0c15\u0c4d \u0c38\u0c3f\u0c26\u0c4d\u0c27\u0c02',
+          text:
+            'FastAPI \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c3f API \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c35\u0c3f\u0c1a\u0c3e\u0c30\u0c23\u0c32 \u0c28\u0c3f\u0c30\u0c4d\u0c35\u0c39\u0c23\u0c28\u0c41 \u0c1a\u0c42\u0c38\u0c41\u0c15\u0c41\u0c02\u0c1f\u0c41\u0c02\u0c26\u0c3f; Docker Compose \u0c2b\u0c4d\u0c30\u0c02\u0c1f\u0c4d\u200c\u0c0e\u0c02\u0c21\u0c4d, \u0c2c\u0c4d\u0c2f\u0c3e\u0c15\u0c4d\u200c\u0c0e\u0c02\u0c21\u0c4d, \u0c2e\u0c30\u0c3f\u0c2f\u0c41 PostgreSQL\u0c28\u0c41 \u0c15\u0c32\u0c3f\u0c38\u0c3f \u0c24\u0c46\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3f.',
+        },
+      ],
+    },
+    account: {
+      eyebrow: '\u0c16\u0c3e\u0c24\u0c3e',
+      title:
+        '\u0c2e\u0c40 \u0c2a\u0c4d\u0c30\u0c4a\u0c2b\u0c48\u0c32\u0c4d \u0c35\u0c3f\u0c35\u0c30\u0c3e\u0c32\u0c41 \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c2d\u0c3e\u0c37\u0c3e \u0c05\u0c2d\u0c3f\u0c30\u0c41\u0c1a\u0c3f\u0c28\u0c3f \u0c28\u0c3f\u0c30\u0c4d\u0c35\u0c39\u0c3f\u0c02\u0c1a\u0c02\u0c21\u0c3f.',
+      lead:
+        '\u0c08 \u0c38\u0c30\u0c33\u0c2e\u0c48\u0c28 \u0c38\u0c46\u0c1f\u0c4d\u0c1f\u0c3f\u0c02\u0c17\u0c4d\u0c38\u0c4d \u0c2a\u0c47\u0c1c\u0c4d \u0c32\u0c4b \u0c2e\u0c40 \u0c16\u0c3e\u0c24\u0c3e \u0c35\u0c3f\u0c35\u0c30\u0c3e\u0c32\u0c41 \u0c15\u0c28\u0c3f\u0c2a\u0c3f\u0c38\u0c4d\u0c24\u0c3e\u0c2f\u0c3f, \u0c35\u0c46\u0c2c\u0c4d\u0c38\u0c48\u0c1f\u0c4d \u0c2d\u0c3e\u0c37\u0c28\u0c41 \u0c38\u0c41\u0c32\u0c2d\u0c02\u0c17\u0c3e \u0c2e\u0c3e\u0c30\u0c4d\u0c1a\u0c35\u0c1a\u0c4d\u0c1a\u0c41.',
+      profileTitle: '\u0c2a\u0c4d\u0c30\u0c4a\u0c2b\u0c48\u0c32\u0c4d \u0c35\u0c3f\u0c35\u0c30\u0c3e\u0c32\u0c41',
+      preferencesTitle: '\u0c05\u0c2d\u0c3f\u0c30\u0c41\u0c1a\u0c41\u0c32\u0c41',
+      languageLead:
+        '\u0c35\u0c46\u0c2c\u0c4d\u0c38\u0c48\u0c1f\u0c4d \u0c2e\u0c4a\u0c24\u0c4d\u0c24\u0c02 \u0c2e\u0c40\u0c15\u0c41 \u0c15\u0c3e\u0c35\u0c32\u0c38\u0c3f\u0c28 \u0c2d\u0c3e\u0c37\u0c28\u0c41 \u0c0e\u0c02\u0c2a\u0c3f\u0c15 \u0c1a\u0c47\u0c38\u0c41\u0c15\u0c4b\u0c02\u0c21\u0c3f.',
+      logoutLabel: '\u0c32\u0c3e\u0c17\u0c4c\u0c1f\u0c4d',
+      fields: {
+        name: '\u0c2a\u0c47\u0c30\u0c41',
+        username: '\u0c2f\u0c42\u0c1c\u0c30\u0c4d\u0c28\u0c47\u0c2e\u0c4d',
+        email: '\u0c08\u0c2e\u0c46\u0c2f\u0c3f\u0c32\u0c4d',
+      },
+    },
+    auspicious: {
+      eyebrow:
+        '\u0c36\u0c41\u0c2d \u0c26\u0c3f\u0c28\u0c3e\u0c32\u0c41 2026',
+      title:
+        '\u0c2a\u0c02\u0c21\u0c41\u0c17 \u0c2a\u0c4d\u0c30\u0c23\u0c3e\u0c33\u0c3f\u0c15',
+      lead:
+        '\u0c2a\u0c02\u0c1a\u0c3e\u0c02\u0c17\u0c02 \u0c24\u0c47\u0c26\u0c40\u0c32\u0c41 \u0c2a\u0c4d\u0c30\u0c3e\u0c02\u0c24\u0c02 \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c38\u0c02\u0c2a\u0c4d\u0c30\u0c26\u0c3e\u0c2f\u0c02 \u0c2a\u0c4d\u0c30\u0c15\u0c3e\u0c30\u0c02 \u0c2e\u0c3e\u0c30\u0c41\u0c24\u0c3e\u0c2f\u0c3f; \u0c05\u0c02\u0c26\u0c41\u0c15\u0c47 \u0c08 \u0c2a\u0c47\u0c1c\u0c40 2026 \u0c2a\u0c02\u0c21\u0c41\u0c17\u0c32 \u0c38\u0c3f\u0c26\u0c4d\u0c27\u0c24 \u0c17\u0c21\u0c41\u0c35\u0c41\u0c32\u0c41 \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c35\u0c3e\u0c1f\u0c3f \u0c1a\u0c41\u0c1f\u0c4d\u0c1f\u0c42 \u0c38\u0c3e\u0c27\u0c3e\u0c30\u0c23\u0c02\u0c17\u0c3e \u0c05\u0c35\u0c38\u0c30\u0c2e\u0c2f\u0c4d\u0c2f\u0c47 \u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c2a\u0c48 \u0c26\u0c43\u0c37\u0c4d\u0c1f\u0c3f \u0c2a\u0c46\u0c21\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f.',
+      planningNotes: [
+        {
+          title: '\u0c2e\u0c15\u0c30 \u0c38\u0c02\u0c15\u0c4d\u0c30\u0c3e\u0c02\u0c24\u0c3f',
+          text:
+            '\u0c1c\u0c28\u0c35\u0c30\u0c3f \u0c38\u0c40\u0c1c\u0c28\u0c4d\u200c\u0c15\u0c41 \u0c2e\u0c41\u0c02\u0c26\u0c41\u0c17\u0c3e\u0c28\u0c47 \u0c2c\u0c39\u0c41\u0c2e\u0c24\u0c3f \u0c1f\u0c4d\u0c30\u0c47\u0c32\u0c41, \u0c15\u0c41\u0c1f\u0c41\u0c02\u0c2c \u0c2a\u0c42\u0c1c\u0c3e \u0c15\u0c3f\u0c1f\u0c4d\u0c32\u0c41, \u0c28\u0c41\u0c35\u0c4d\u0c35\u0c41\u0c32\u0c24\u0c4b \u0c38\u0c02\u0c2c\u0c02\u0c27\u0c3f\u0c02\u0c1a\u0c3f\u0c28 \u0c38\u0c3e\u0c2e\u0c17\u0c4d\u0c30\u0c3f, \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c07\u0c24\u0c4d\u0c24\u0c21\u0c3f \u0c2a\u0c4d\u0c30\u0c26\u0c30\u0c4d\u0c36\u0c28 \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41\u0c32\u0c28\u0c41 \u0c38\u0c3f\u0c26\u0c4d\u0c27\u0c02 \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f.',
+        },
+        {
+          title: '\u0c09\u0c17\u0c3e\u0c26\u0c3f',
+          text:
+            '\u0c15\u0c41\u0c1f\u0c41\u0c02\u0c2c \u0c38\u0c02\u0c26\u0c30\u0c4d\u0c36\u0c28\u0c32\u0c41 \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c2a\u0c02\u0c21\u0c41\u0c17 \u0c2a\u0c42\u0c1c \u0c15\u0c4b\u0c38\u0c02 \u0c28\u0c42\u0c24\u0c28 \u0c38\u0c02\u0c35\u0c24\u0c4d\u0c38\u0c30 \u0c17\u0c3f\u0c2b\u0c4d\u0c1f\u0c4d \u0c2c\u0c3e\u0c15\u0c4d\u0c38\u0c4d\u200c\u0c32\u0c41, \u0c15\u0c41\u0c02\u0c15\u0c41\u0c2e \u0c38\u0c46\u0c1f\u0c4d\u0c32\u0c41, \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c2a\u0c4d\u0c30\u0c24\u0c4d\u0c2f\u0c47\u0c15 \u0c06\u0c32\u0c2f \u0c05\u0c32\u0c02\u0c15\u0c30\u0c23\u0c32\u0c28\u0c41 \u0c38\u0c3f\u0c26\u0c4d\u0c27\u0c02\u0c17\u0c3e \u0c09\u0c02\u0c1a\u0c02\u0c21\u0c3f.',
+        },
+        {
+          title:
+            '\u0c35\u0c30\u0c32\u0c15\u0c4d\u0c37\u0c4d\u0c2e\u0c40 \u0c35\u0c4d\u0c30\u0c24\u0c02',
+          text:
+            '\u0c32\u0c15\u0c4d\u0c37\u0c4d\u0c2e\u0c40 \u0c05\u0c32\u0c02\u0c15\u0c30\u0c23, \u0c35\u0c4d\u0c30\u0c24\u0c02 \u0c15\u0c3f\u0c1f\u0c4d\u0c32\u0c41, \u0c07\u0c24\u0c4d\u0c24\u0c21\u0c3f \u0c26\u0c40\u0c2a\u0c3e\u0c32\u0c41, \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c1a\u0c15\u0c4d\u0c15\u0c17\u0c3e \u0c2a\u0c4d\u0c2f\u0c3e\u0c15\u0c4d \u0c1a\u0c47\u0c38\u0c3f\u0c28 \u0c17\u0c43\u0c39 \u0c06\u0c1a\u0c3e\u0c30\u0c3e\u0c32 \u0c38\u0c2e\u0c3e\u0c39\u0c3e\u0c30\u0c3e\u0c32\u0c2a\u0c48 \u0c26\u0c43\u0c37\u0c4d\u0c1f\u0c3f \u0c2a\u0c46\u0c1f\u0c4d\u0c1f\u0c02\u0c21\u0c3f.',
+        },
+        {
+          title: '\u0c35\u0c3f\u0c28\u0c3e\u0c2f\u0c15 \u0c1a\u0c35\u0c3f\u0c24\u0c3f',
+          text:
+            '\u0c2a\u0c30\u0c4d\u0c2f\u0c3e\u0c35\u0c30\u0c23\u0c39\u0c3f\u0c24 \u0c2a\u0c42\u0c1c\u0c3e \u0c38\u0c46\u0c1f\u0c4d\u0c32\u0c41, \u0c17\u0c23\u0c47\u0c36\u0c41\u0c28\u0c3f\u0c15\u0c3f \u0c38\u0c02\u0c2c\u0c02\u0c27\u0c3f\u0c02\u0c1a\u0c3f\u0c28 \u0c05\u0c35\u0c38\u0c30\u0c3e\u0c32\u0c41, \u0c05\u0c17\u0c30\u0c2c\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41, \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c05\u0c26\u0c47 \u0c30\u0c4b\u0c1c\u0c41 \u0c09\u0c2a\u0c2f\u0c4b\u0c17\u0c3f\u0c02\u0c1a\u0c17\u0c32 \u0c17\u0c43\u0c39 \u0c2a\u0c42\u0c1c\u0c3e \u0c15\u0c3e\u0c02\u0c2c\u0c4b\u0c32\u0c28\u0c41 \u0c28\u0c3f\u0c32\u0c4d\u0c35 \u0c09\u0c02\u0c1a\u0c02\u0c21\u0c3f.',
+        },
+      ],
+      seasonalEyebrow:
+        '\u0c38\u0c40\u0c1c\u0c28\u0c32\u0c4d \u0c15\u0c3f\u0c1f\u0c4d\u0c32\u0c41',
+      seasonalTitle:
+        '\u0c2a\u0c02\u0c21\u0c41\u0c17 \u0c2a\u0c4d\u0c30\u0c24\u0c4d\u0c2f\u0c47\u0c15 \u0c38\u0c46\u0c1f\u0c4d\u0c32\u0c41',
+    },
+    cart: {
+      title: (count: number) =>
+        `\u0c2e\u0c40 \u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d (${count} \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41\u0c32\u0c41)`,
+      emptyTitle:
+        '\u0c2e\u0c40 \u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d \u0c16\u0c3e\u0c33\u0c40\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f.',
+      emptyCopy:
+        '\u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41\u0c32\u0c28\u0c41 \u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d\u0c32\u0c4b \u0c1c\u0c4b\u0c21\u0c3f\u0c02\u0c1a\u0c02\u0c21\u0c3f.',
+      browseProducts:
+        '\u0c09\u0c24\u0c4d\u0c2a\u0c24\u0c4d\u0c24\u0c41\u0c32\u0c41 \u0c1a\u0c42\u0c21\u0c02\u0c21\u0c3f',
+      remove:
+        '\u0c24\u0c4a\u0c32\u0c17\u0c3f\u0c02\u0c1a\u0c02\u0c21\u0c3f',
+      quantity: (count: number) => `x${count}`,
+      checkout:
+        '\u0c35\u0c3e\u0c1f\u0c4d\u0c38\u0c3e\u0c2a\u0c4d \u0c26\u0c4d\u0c35\u0c3e\u0c30\u0c3e \u0c1a\u0c46\u0c15\u0c4c\u0c1f\u0c4d',
+      close:
+        '\u0c15\u0c3e\u0c30\u0c4d\u0c1f\u0c4d \u0c2e\u0c42\u0c38\u0c3f\u0c35\u0c47\u0c2f\u0c02\u0c21\u0c3f',
+    },
+  },
+} as const;
+
+export type SiteLanguage = keyof typeof siteCopy;
+export type SiteCopy = (typeof siteCopy)[SiteLanguage];
+
+const categoryLabels = {
+  'Puja Samagri': {
+    en: 'Puja Samagri',
+    te: '\u0c2a\u0c42\u0c1c\u0c3e \u0c38\u0c3e\u0c2e\u0c17\u0c4d\u0c30\u0c3f',
+  },
+  'Brass Items': {
+    en: 'Brass Items',
+    te: '\u0c07\u0c24\u0c4d\u0c24\u0c21\u0c3f \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41\u0c32\u0c41',
+  },
+  'Return Gifts': {
+    en: 'Return Gifts',
+    te: '\u0c30\u0c3f\u0c1f\u0c30\u0c4d\u0c28\u0c4d \u0c17\u0c3f\u0c2b\u0c4d\u0c1f\u0c4d\u0c38\u0c4d',
+  },
+  'Temple Accessories': {
+    en: 'Temple Accessories',
+    te: '\u0c26\u0c47\u0c35\u0c3e\u0c32\u0c2f \u0c05\u0c32\u0c02\u0c15\u0c30\u0c23',
+  },
+  'Festival Special Items': {
+    en: 'Festival Special Items',
+    te: '\u0c2a\u0c02\u0c21\u0c41\u0c17 \u0c2a\u0c4d\u0c30\u0c24\u0c4d\u0c2f\u0c47\u0c15 \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c35\u0c41\u0c32\u0c41',
+  },
+} as const;
+
+const productLabels: Record<string, Partial<Record<SiteLanguage, string>>> = {
+  'puja-thali-set': {
+    te: '\u0c2a\u0c42\u0c1c\u0c3e \u0c24\u0c3e\u0c33\u0c3f \u0c38\u0c46\u0c1f\u0c4d',
+  },
+  'kumkum-turmeric-set': {
+    te: '\u0c15\u0c41\u0c02\u0c15\u0c41\u0c2e \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c2a\u0c38\u0c41\u0c2a\u0c41 \u0c38\u0c46\u0c1f\u0c4d',
+  },
+  'incense-sticks-pack': {
+    te: '\u0c05\u0c17\u0c30\u0c2c\u0c24\u0c4d\u0c24\u0c3f \u0c2a\u0c4d\u0c2f\u0c3e\u0c15\u0c4d',
+  },
+  'camphor-box': {
+    te: '\u0c15\u0c30\u0c4d\u0c2a\u0c42\u0c30\u0c02 \u0c2c\u0c3e\u0c15\u0c4d\u0c38\u0c4d',
+  },
+  'vibhuti-kumkum-set': {
+    te: '\u0c35\u0c3f\u0c2d\u0c42\u0c24\u0c3f \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c15\u0c41\u0c02\u0c15\u0c41\u0c2e \u0c38\u0c46\u0c1f\u0c4d',
+  },
+  'puja-oil-set': {
+    te: '\u0c2a\u0c42\u0c1c\u0c3e \u0c28\u0c42\u0c28\u0c46 \u0c38\u0c46\u0c1f\u0c4d',
+  },
+  'aarti-essentials-tray': {
+    te: '\u0c39\u0c3e\u0c30\u0c24\u0c3f \u0c05\u0c35\u0c38\u0c30\u0c3e\u0c32 \u0c1f\u0c4d\u0c30\u0c47',
+  },
+  'brass-diya-lamp': {
+    te: '\u0c07\u0c24\u0c4d\u0c24\u0c21\u0c3f \u0c26\u0c40\u0c2a\u0c02',
+  },
+  'brass-kalash': {
+    te: '\u0c07\u0c24\u0c4d\u0c24\u0c21\u0c3f \u0c15\u0c32\u0c36\u0c02',
+  },
+  'brass-vessel-pair': {
+    te: '\u0c07\u0c24\u0c4d\u0c24\u0c21\u0c3f \u0c2a\u0c3e\u0c24\u0c4d\u0c30\u0c32 \u0c1c\u0c02\u0c1f',
+  },
+  'sacred-return-gift-set': {
+    te: '\u0c36\u0c41\u0c2d \u0c30\u0c3f\u0c1f\u0c30\u0c4d\u0c28\u0c4d \u0c17\u0c3f\u0c2b\u0c4d\u0c1f\u0c4d \u0c38\u0c46\u0c1f\u0c4d',
+  },
+  'temple-decor-collection': {
+    te: '\u0c26\u0c47\u0c35\u0c3e\u0c32\u0c2f \u0c05\u0c32\u0c02\u0c15\u0c30\u0c23 \u0c15\u0c32\u0c46\u0c15\u0c4d\u0c37\u0c28\u0c4d',
+  },
+  'sankranti-puja-kit': {
+    te: '\u0c38\u0c02\u0c15\u0c4d\u0c30\u0c3e\u0c02\u0c24\u0c3f \u0c2a\u0c42\u0c1c\u0c3e \u0c15\u0c3f\u0c1f\u0c4d',
+  },
+  'vinayaka-chavithi-set': {
+    te: '\u0c35\u0c3f\u0c28\u0c3e\u0c2f\u0c15 \u0c1a\u0c35\u0c3f\u0c24\u0c3f \u0c38\u0c46\u0c1f\u0c4d',
+  },
+  'varalakshmi-vratham-kit': {
+    te: '\u0c35\u0c30\u0c32\u0c15\u0c4d\u0c37\u0c4d\u0c2e\u0c40 \u0c35\u0c4d\u0c30\u0c24\u0c02 \u0c15\u0c3f\u0c1f\u0c4d',
+  },
+  'ugadi-special-set': {
+    te: '\u0c09\u0c17\u0c3e\u0c26\u0c3f \u0c38\u0c4d\u0c2a\u0c46\u0c37\u0c32\u0c4d \u0c38\u0c46\u0c1f\u0c4d',
+  },
+};
+
+export function getCategoryLabel(category: string, language: SiteLanguage) {
+  return categoryLabels[category as keyof typeof categoryLabels]?.[language] ?? category;
+}
+
+export function getProductName(
+  productId: string,
+  fallbackName: string,
+  language: SiteLanguage
+) {
+  return productLabels[productId]?.[language] ?? fallbackName;
+}

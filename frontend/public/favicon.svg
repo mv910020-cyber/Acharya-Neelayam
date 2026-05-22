@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="faviconTitle">
+  <title id="faviconTitle">Aachara Nilayam</title>
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7de73" />
+      <stop offset="100%" stop-color="#c99306" />
+    </linearGradient>
+    <linearGradient id="seal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d7a34" />
+      <stop offset="100%" stop-color="#0a5b27" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="10" fill="#fff7db" />
+  <circle cx="32" cy="32" r="28" fill="#fff7db" stroke="url(#ring)" stroke-width="4" />
+  <circle cx="32" cy="32" r="21" fill="url(#seal)" stroke="#f0cf57" stroke-width="2.5" />
+  <circle cx="32" cy="32" r="17" fill="none" stroke="#f0cf57" stroke-width="1.2" stroke-dasharray="2 3" />
+  <text
+    x="32"
+    y="40"
+    text-anchor="middle"
+    fill="#f8d96c"
+    font-size="24"
+    font-weight="700"
+    font-family="Georgia, 'Noto Serif Telugu', serif"
+  >
+    ఆ
+  </text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="800" x2="800" y1="0" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9d180b"/>
+      <stop offset=".28" stop-color="#ba3f0f"/>
+      <stop offset=".64" stop-color="#d05a10"/>
+      <stop offset="1" stop-color="#611106"/>
+    </linearGradient>
+    <radialGradient id="glowLarge" cx="0" cy="0" r="1" gradientTransform="translate(560 430) rotate(90) scale(290 430)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc483" stop-opacity=".32"/>
+      <stop offset=".58" stop-color="#ffc483" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#ffc483" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sunGlow" cx="0" cy="0" r="1" gradientTransform="translate(760 220) rotate(90) scale(128 128)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe6af" stop-opacity=".82"/>
+      <stop offset=".52" stop-color="#ffd68a" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#ffd68a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="760" fill="url(#sky)"/>
+  <rect width="1600" height="760" fill="url(#glowLarge)"/>
+  <rect width="1600" height="760" fill="url(#sunGlow)"/>
+</svg>

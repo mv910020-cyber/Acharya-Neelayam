@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Aachara Nilayam</title>
+  <desc id="logoDesc">A devotional logo with a green and gold seal, the English name Aachara Nilayam, and the Telugu name Aachara Nilayam in Telugu script.</desc>
+  <defs>
+    <linearGradient id="sealBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d7a34"/>
+      <stop offset="100%" stop-color="#0a5b27"/>
+    </linearGradient>
+    <linearGradient id="ringBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7de73"/>
+      <stop offset="100%" stop-color="#c99306"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10 12)">
+    <circle cx="50" cy="50" r="47" fill="#fff7db" stroke="url(#ringBg)" stroke-width="6"/>
+    <circle cx="50" cy="50" r="36" fill="url(#sealBg)" stroke="#f0cf57" stroke-width="3"/>
+    <circle cx="50" cy="50" r="29" fill="none" stroke="#f0cf57" stroke-width="1.5" stroke-dasharray="2.5 4"/>
+    <text x="50" y="63" text-anchor="middle" fill="#f8d96c" font-size="34" font-weight="700" font-family="Georgia, 'Noto Serif Telugu', serif">&#x0C06;</text>
+  </g>
+  <text x="120" y="52" fill="#7c0a0a" font-size="34" font-weight="700" font-family="'Palatino Linotype', Georgia, serif">Aachara Nilayam</text>
+  <text x="120" y="89" fill="#b28a1e" font-size="24" font-weight="700" font-family="'Noto Serif Telugu', 'Nirmala UI', serif">&#x0C06;&#x0C1A;&#x0C3E;&#x0C30; &#x0C28;&#x0C3F;&#x0C32;&#x0C2F;&#x0C02;</text>
+</svg>

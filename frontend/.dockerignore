@@ -1,0 +1,45 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Dependencies
+node_modules/
+.venv/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/
+.codex-temp/
+backend/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env.local
+.env.*.local
+
+# Documentation
+README.md
+LICENSE
+
+# Tests
+.test
+.spec
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.circleci/
+
+# Version control
+.git
+.hg

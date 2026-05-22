@@ -1,0 +1,83 @@
+:root {
+  --maroon-800: #540404;
+  --maroon-700: #7c0a0a;
+  --maroon-600: #a30c0c;
+  --gold-900: #94600b;
+  --gold-300: #f4da7b;
+  --gold-200: #ffe8a6;
+  --ink-800: #4f2b1a;
+  --ink-700: #6a432f;
+  --ink-600: #7b5b4a;
+  --font-sans: 'Segoe UI', 'Trebuchet MS', sans-serif;
+  --font-serif: 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink-800);
+  background: #fff8ea;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  background: #fff8ea;
+  color: var(--ink-800);
+  font-family: var(--font-sans);
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--font-sans);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  border-radius: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(162, 12, 12, 0.45);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(224, 188, 49, 0.28);
+}

@@ -1,0 +1,97 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-/api}
+    container_name: sampradaya-frontend
+    ports:
+      - "3000:80"
+    command: >
+      /bin/sh -c "echo 'Frontend URL: http://localhost:3000' && nginx -g 'daemon off;'"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - sampradaya-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1/health.html"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    volumes:
+      - ./frontend/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: sampradaya-backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - DEBUG=False
+      - DATABASE_URL=postgresql://sampradaya:sampradaya@postgres:5432/sampradaya_store
+      - SECRET_KEY=${SECRET_KEY:-local-dev-secret-change-me}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.5-flash}
+      - SMTP_HOST=${SMTP_HOST:-smtp.gmail.com}
+      - SMTP_PORT=${SMTP_PORT:-465}
+      - SMTP_USER=${SMTP_USER:-mv910020@gmail.com}
+      - SMTP_PASSWORD=${SMTP_PASSWORD:-}
+      - SMTP_SENDER=${SMTP_SENDER:-mv910020@gmail.com}
+      - SMTP_SECURE=${SMTP_SECURE:-ssl}
+      - ORDER_EMAIL_TO=${ORDER_EMAIL_TO:-mv910020@gmail.com}
+      - FRONTEND_PUBLIC_DIR=/app/frontend-public
+      - CORS_ORIGINS=["http://localhost:3000", "http://localhost:5173"]
+    networks:
+      - sampradaya-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; urlopen('http://localhost:8000/api/health', timeout=5).read()"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    volumes:
+      - ./backend:/app:rw
+      - ./frontend/public:/app/frontend-public:ro
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: sampradaya-postgres
+    environment:
+      - POSTGRES_DB=sampradaya_store
+      - POSTGRES_USER=sampradaya
+      - POSTGRES_PASSWORD=sampradaya
+    ports:
+      - "5432:5432"
+    networks:
+      - sampradaya-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sampradaya -d sampradaya_store"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+networks:
+  sampradaya-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  postgres_data:
